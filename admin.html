@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+
+  <title>Owner Area | Given Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="admin">
+    <a href="index.html">← Back to portfolio</a>
+
+    <h1>Owner area</h1>
+
+    <p>
+      Upload certificates, update your profile picture
+      and add your CV.
+    </p>
+
+    <p
+      id="status"
+      class="notice"
+      role="status"
+      aria-live="polite"
+    >
+      Loading owner settings…
+    </p>
+
+    <!-- Owner login -->
+    <form id="login">
+      <h2>Sign in</h2>
+
+      <label for="loginEmail">
+        Email
+        <input
+          id="loginEmail"
+          name="email"
+          type="email"
+          autocomplete="username"
+          required
+        >
+      </label>
+
+      <label for="loginPassword">
+        Password
+        <input
+          id="loginPassword"
+          name="password"
+          type="password"
+          autocomplete="current-password"
+          required
+        >
+      </label>
+
+      <button type="submit">Sign in</button>
+    </form>
+
+    <!-- Displayed after login -->
+    <div id="dashboard" hidden>
+      <button id="logout" type="button">Sign out</button>
+
+      <form id="upload">
+        <h2>Add an upload</h2>
+
+        <label for="uploadKind">
+          Upload type
+          <select id="uploadKind" name="kind">
+            <option value="certificate">Certificate</option>
+            <option value="profile">Profile picture</option>
+            <option value="cv">CV</option>
+          </select>
+        </label>
+
+        <label for="uploadTitle">
+          Title
+          <input
+            id="uploadTitle"
+            name="title"
+            type="text"
+            maxlength="200"
+            placeholder="For example: Introduction to Cloud"
+            required
+          >
+        </label>
+
+        <div id="certificateFields">
+          <label for="uploadIssuer">
+            Issuing organisation
+            <input
+              id="uploadIssuer"
+              name="issuer"
+              type="text"
+              maxlength="200"
+              placeholder="For example: IBM SkillsBuild"
+            >
+          </label>
+
+          <label for="uploadDate">
+            Date received
+            <input
+              id="uploadDate"
+              name="issued_on"
+              type="date"
+            >
+          </label>
+
+          <label for="uploadVerification">
+            Verification link — optional
+            <input
+              id="uploadVerification"
+              name="verification_url"
+              type="url"
+              placeholder="https://"
+            >
+          </label>
+        </div>
+
+        <label for="uploadFile">
+          File
+          <input
+            id="uploadFile"
+            name="file"
+            type="file"
+            accept="image/jpeg,image/png,image/webp,application/pdf"
+            aria-describedby="fileHelp"
+            required
+          >
+        </label>
+
+        <p id="fileHelp">
+          Choose a JPEG, PNG, WebP or PDF up to 10 MB.
+          Profile pictures must be images.
+          Uploaded files will be publicly visible on your portfolio.
+        </p>
+
+        <button type="submit">Upload</button>
+      </form>
+
+      <h2>Your uploads</h2>
+
+      <p>
+        To replace an entry, upload its replacement and remove
+        the old entry. Your latest profile picture and CV
+        will appear on the portfolio.
+      </p>
+
+      <ul id="uploads"></ul>
+    </div>
+
+    <noscript>
+      <p>
+        Enable JavaScript in your browser to use the owner area.
+      </p>
+    </noscript>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

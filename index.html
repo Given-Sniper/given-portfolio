@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Sitole Rethabile Given — Computer Science Honours student at the University of Limpopo. Explore database research, software development and cybersecurity projects."
+  >
+
+  <title>Given Sitole | Computer Science Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <a class="brand" href="#home">
+      Given<span> Sitole.</span>
+    </a>
+
+    <button
+      id="menu"
+      type="button"
+      aria-expanded="false"
+      aria-controls="navigation"
+    >
+      Menu
+    </button>
+
+    <nav id="navigation" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Introduction -->
+    <section class="hero" id="home">
+      <div>
+        <p class="eyebrow">
+          COMPUTER SCIENCE · UNIVERSITY OF LIMPOPO
+        </p>
+
+        <h1>
+          Curiosity.<br>
+          Research.<br>
+          <em>Practical solutions.</em>
+        </h1>
+
+        <p class="intro">
+          I’m Sitole Rethabile Given, a Computer Science Honours
+          student exploring how data, databases and software can
+          solve real problems.
+        </p>
+
+        <p class="availability">
+          Open to graduate and entry-level opportunities
+        </p>
+
+        <div class="actions">
+          <a class="button" href="#projects">
+            Explore my work ↗
+          </a>
+
+          <a class="button secondary" href="#contact">
+            Let’s connect
+          </a>
+
+          <a id="cv" class="button secondary" hidden>
+            Download CV
+          </a>
+        </div>
+      </div>
+
+      <div class="portrait">
+        <img
+          id="profile"
+          alt="Sitole Rethabile Given"
+          hidden
+        >
+
+        <div
+          id="portraitPlaceholder"
+          aria-label="Profile photo will be added"
+        >
+          SRG
+          <span>Your next colleague.</span>
+        </div>
+
+        <div class="portrait-caption">
+          BSc Honours in Computer Science
+          <span>University of Limpopo · 2026</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <p class="eyebrow">01 / ABOUT ME</p>
+
+      <h2>
+        A foundation in mathematics.<br>
+        A future in technology.
+      </h2>
+
+      <div class="split">
+        <p>
+          I completed my BSc in Mathematics and Computer Science
+          at the University of Limpopo and continued into BSc
+          Honours in Computer Science in 2026. My work spans
+          database performance, network security, Python
+          applications and embedded systems.
+        </p>
+
+        <p>
+          I’m interested in data analyst, database administrator,
+          AI and machine learning, software development, and
+          data engineering opportunities. Through research and
+          student support, I’ve developed analytical thinking,
+          communication and a practical approach to problem-solving.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <p class="eyebrow">02 / EDUCATION</p>
+      <h2>Learning with purpose.</h2>
+
+      <div class="education">
+        <article>
+          <span class="tag">CURRENT · 2026</span>
+
+          <h3>BSc Honours in Computer Science</h3>
+          <p>University of Limpopo</p>
+
+          <p>
+            Research focus: cross-platform database indexing
+            and query execution performance.
+          </p>
+        </article>
+
+        <article>
+          <span class="tag">COMPLETED</span>
+
+          <h3>BSc in Mathematics and Computer Science</h3>
+          <p>University of Limpopo</p>
+
+          <p>
+            A foundation in analytical reasoning,
+            mathematics and computing.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <p class="eyebrow">03 / TECHNICAL SKILLS</p>
+      <h2>Tools behind the work.</h2>
+
+      <div class="skills">
+        <article>
+          <h3>Programming</h3>
+          <p>Python · SQL · C++</p>
+        </article>
+
+        <article>
+          <h3>Databases &amp; analysis</h3>
+
+          <p>
+            PostgreSQL · Oracle · SQL Server ·
+            Indexing experiments · Performance analysis
+          </p>
+        </article>
+
+        <article>
+          <h3>Security &amp; tools</h3>
+
+          <p>
+            Network traffic analysis · DVWA · Docker ·
+            WSL / Ubuntu · Git / GitHub
+          </p>
+        </article>
+
+        <article>
+          <h3>Embedded systems</h3>
+
+          <p>
+            Arduino Mega · ESP32 · Sensors ·
+            Motor controllers · Hardware integration
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Project cards are populated by script.js -->
+    <section id="projects">
+      <p class="eyebrow">04 / PROJECTS &amp; RESEARCH</p>
+      <h2>Evidence of what I can do.</h2>
+
+      <p class="section-intro">
+        Academic research, collaborative security work and
+        projects I’m continuing to develop.
+      </p>
+
+      <div id="projectList"></div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <p class="eyebrow">05 / EXPERIENCE</p>
+
+      <h2>
+        Technical thinking.<br>
+        Human connection.
+      </h2>
+
+      <article class="experience">
+        <span class="tag">2023 — 2025</span>
+
+        <h3>SI Leader &amp; Student Assistant</h3>
+        <p class="institution">University of Limpopo</p>
+
+        <p>
+          Supported students in Mathematics and Applied Mathematics
+          through academic assistance and peer learning. Developed
+          communication, leadership, teamwork and problem-solving
+          skills by helping students understand challenging concepts.
+        </p>
+      </article>
+    </section>
+
+    <!-- Certificate cards are populated by script.js -->
+    <section id="certificates">
+      <p class="eyebrow">
+        06 / CERTIFICATIONS &amp; ACHIEVEMENTS
+      </p>
+
+      <h2>Continuing to learn.</h2>
+
+      <div id="certificateList" class="certificates"></div>
+      <p id="assetStatus" role="status"></p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <p class="eyebrow">07 / CONTACT</p>
+      <h2>Let’s build what comes next.</h2>
+
+      <p>
+        Have a graduate opportunity, a project or a conversation
+        in mind? I’d love to hear from you.
+      </p>
+
+      <a
+        class="button"
+        href="mailto:sitolerethabile@gmail.com"
+      >
+        Email Given ↗
+      </a>
+
+      <div class="contact-links">
+        <a
+          href="https://github.com/Given-Sniper"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub ↗
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/rethabile-sitole-97b900252"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn ↗
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>
+      © <span id="year">2026</span> Sitole Rethabile Given
+    </span>
+
+    <a href="admin.html">Owner login</a>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
